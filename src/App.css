@@ -1,0 +1,280 @@
+body{
+  background-color: rgb(207, 207, 186);
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.head{
+  background-color: rgb(248, 179, 51);
+  width: 100vw;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.search-input{
+  height: 30px;
+  width: 15vw;
+  border-radius: 5px;
+  border: 1px solid #8f8e8e;
+  outline: none;
+}
+
+.search-input:focus{
+    border-color: #007bff;
+  }
+
+
+table {
+  width: 90vw;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 12px 3vw;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(248, 179, 51);
+}
+
+tr:nth-child(odd) {
+  background-color: beige;
+}
+
+th {
+  background-color: rgb(248, 179, 51) ;
+  font-weight: 700;
+}
+
+.add-user-container{
+  background-color: beige;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+  width: 60vw;
+  box-shadow: 3px 2px 8px black;
+  border-radius: 5px;
+  position: relative;
+  left: calc((100vw - 60vw)/2);
+  top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#close{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.add-service-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-styling{
+  width: 50vw;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+.input-styling:focus {
+  border-color: #007bff;
+}
+
+.btn{
+  background-color: rgb(248, 179, 51);
+  border: none;
+  height: 40px;
+  width: 50vw;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn:hover{
+  background-color: rgb(250, 173, 30)
+}
+
+.user-details-container{
+  background-color: beige;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+  width: 40vw;
+  box-shadow: 3px 2px 8px black;
+  border-radius: 5px;
+  position: relative;
+  left: calc((100vw - 40vw)/2);
+  top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-details{
+  color: rgb(219, 144, 4);
+}
+
+.close-btn{
+  background-color: rgb(248, 179, 51);
+  border: none;
+  height: 40px;
+  width: 35vw;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.spinner{
+  position: absolute;
+  top: 50%;
+}
+
+.user-delete-container{
+  background-color: beige;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+  width: 40vw;
+  box-shadow: 3px 2px 8px black;
+  border-radius: 5px;
+  position: relative;
+  left: calc((100vw - 40vw)/2);
+  top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 1175px) {
+  .email-column {
+    display: none; /* Hide these columns on small screens */
+  }
+  .search-input-email{
+    display: none;
+  }
+  .search-input{
+    width: 20vw;
+  }
+  .table{
+    width: 95vw;
+  }
+  .add-user-container{
+    width: 70vw;
+    position: relative;
+    left: calc((100vw - 70vw)/2);
+  }
+  .input-styling{
+    width: 60vw;
+  }
+  .btn{
+    width: 60vw;
+  }
+}
+
+@media (max-width: 675px) {
+  .email-column {
+    display: none; 
+  }
+  .search-input-email{
+    display: none;
+  }
+  .phone-column {
+    display: none;
+  }
+  .search-input-phone{
+    display: none;
+  }
+  .table{
+    width: 95vw;
+  }
+  .search-input{
+    width: 30vw;
+  }
+  .add-user-container{
+    width: 90vw;
+    position: relative;
+    left: calc((100vw - 90vw)/2);
+  }
+  .input-styling{
+    width: 80vw;
+  }
+  .btn{
+    width: 80vw;
+    font-size: 14px;
+  }
+  .head{
+    font-size: 18px;
+  }
+  .user-details-container{
+    width: 90vw;
+    position: relative;
+    left: calc((100vw - 90vw)/2);
+  }
+  .close-btn{
+    width: 80vw;
+    font-size: 14px;
+  }
+  th{
+    font-size: 14px;
+  }
+  td{
+    font-size: 12px;
+  }
+  #user-modal-title{
+    font-size: 18px;
+  }
+  .add-edit-user{
+    font-size: 20px;
+  }
+  .form-input{
+    font-size: 12px;
+  }
+  .user-delete-container{
+    width: 90vw;
+    position: relative;
+    left: calc((100vw - 90vw)/2);
+  }
+}
